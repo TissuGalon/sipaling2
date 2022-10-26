@@ -1,278 +1,494 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <!-- Pignose Calender -->
-    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
-    <!-- Chartist -->
-    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
-    <!-- Custom Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="icons/font-awesome/css/font-awesome.min.css">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="__manifest.json">
 </head>
 
 <body>
 
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
-            </svg>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <!-- <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Product Page</div>
+        <div class="right">
+            <a href="#" class="headerButton">
+                <ion-icon name="star-outline"></ion-icon>
+            </a>
+        </div>
+    </div> -->
+    <!-- * App Header -->
+
+    <!-- Header -->
+    <div class="container fixed-top mt-3">
+        <div class="d-flex justify-content-between">
+            <a href="index.html">
+               <div class="btn-rounded text-center shadow" style="background-color: white; width: 50px; height: 50px;">
+                <i class="fa fa-arrow-left p-3" onclick="window.history.go(-1); return false;"></i>
+            </div> 
+            </a>
+            
+            <div class="btn-rounded text-center shadow" style="background-color: white; width: 50px; height: 50px;">
+                <div class="fa fa-heart p-3"></div>
+            </div>
         </div>
     </div>
-    <!--*******************
-        Preloader end
-    ********************-->
+    <!-- Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="pt-0">
+
+        <!-- carousel -->
+        <div class="carousel-full owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/produk/cappucino.jpg" alt="alt" class="imaged w-100 ">
+            </div>
+
+        </div>
+        <!-- * carousel -->
+        <div class="section full">
+            <div class="wide-block pt-2 pb-2 product-detail-header">
+                <div class="rate-block mb-1">
+                    <ion-icon name="star" class="active"></ion-icon>
+                    <ion-icon name="star" class="active"></ion-icon>
+                    <ion-icon name="star" class="active"></ion-icon>
+                    <ion-icon name="star" class="active"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <h1 class="title">Cappucino</h1>
+                <div class="text">1 kg - Packed</div>
+                <div class="detail-footer">
+                    <!-- price -->
+                    <div class="price">
+                        <div class="old-price">$ 74.99</div>
+                        <div class="current-price text-warning">$ 49.99</div>
+                    </div>
+                    <!-- * price -->
+                    <!-- amount -->
+                    <div class="amount">
+                        <div class="stepper stepper-secondary">
+                            <a href="#" class="stepper-button stepper-down">-</a>
+                            <input type="text" class="form-control" value="1" disabled/>
+                            <a href="#" class="stepper-button stepper-up">+</a>
+                        </div>
+                    </div>
+                    <!-- * amount -->
+                </div>
+                <button class="btn btn-warning rounded btn-lg btn-block">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    Pesan
+                </button>
+            </div>
+        </div>
+
+
+        <div class="section full mt-2">
+            <div class="section-title">Product Details</div>
+            <div class="wide-block pt-2 pb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla, nibh sed viverra dictum,
+                ligula mauris lobortis tortor, eu efficitur leo nulla at metus. Aliquam malesuada enim augue, semper
+                sagittis enim tempus sed.
+            </div>
+
+        </div>
+
+        <div class="row bg-white mt-3 mx-0 pb-2">
+                
+                
+            <!-- SLIDER  -->
+
+            <div class="container rounded mt-2" style="overflow-x: auto; white-space: nowrap;">
+                <div class="row rounded">
+                    <div class="d-flex mb-2 mt-2">
+
+
+            <!-- ITEM -->
+            <div class="rounded " style="width: 250px; height: 150px; overflow: hidden;">
+                <img src="images/carousel/carousel (3).webp" class="img-fluid img-rounded ml-1" style="width: 250px; height: auto;">
+            </div>
+            <!-- END -->
+            <!-- ITEM -->
+            <div class="rounded " style="width: 250px; height: 150px; overflow: hidden;">
+                <img src="images/carousel/carousel (5).webp" class="img-fluid img-rounded ml-1" style="width: 250px; height: auto;">
+            </div>
+            <!-- END -->
 
 
 
 
-    
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
-    <div id="main-wrapper">
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="">
-
-            <div class="container-fluid px-0">
-
-
-
-        
-            
-        <div class="container fixed-top mt-3">
-                <div class="d-flex justify-content-between">
-                    <a href="index.html">
-                       <div class="btn-rounded text-center shadow" style="background-color: white; width: 50px; height: 50px;">
-                        <i class="fa fa-arrow-left p-3"  onclick="window.history.go(-1); return false;"></i>
-                    </div> 
-                    </a>
-                    
-                    <div class="btn-rounded text-center shadow" style="background-color: white; width: 50px; height: 50px;">
-                        <div class="fa fa-heart p-3"></div>
                     </div>
                 </div>
             </div>
 
+            <!-- SLIDER  -->
 
-
-        <div style="width: 100%; height: 300px; overflow: hidden; background-color: white;" class="">
-
-            <img src="images/produk/cappucino.jpg" style="width: 100%; height: auto; border-bottom-right-radius: 2rem; border-bottom-left-radius: 2rem;" class="">
-
-            
-        </div>
-
-
-
-        <div class="container bg-white shadow" style="border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem;">
 
             <br>
-            <h4 class="text-black mb-0 "><strong>Cappucino</strong></h4>
-            <small class="text-secondary">#Category</small>
-
-            <div class="d-flex justify-content-between mt-3">
-            <h4 class="text-warning mt-2"><strong>Rp. 20.000,00</strong></h4>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-warning text-white">-</button>
-                                        <button type="button" class="btn bg-white text-secondary">1</button>
-                                        <button type="button" class="btn btn-warning text-white">+</button>
-                                    </div>
-
             </div>
 
-
-
-            <hr>
-
-            <a href="#" class="text-secondary">
-                <div class="d-flex justify-content-between">
-                <div class="text-secondary">Merchant Name</div>
-                <div><i class="icon icon-arrow-right"></i></div>
+        <!-- Review -->
+        <div class="section full mt-2">
+            <div class="section-title">Reviews (2)</div>
+            <div class="wide-block pt-2 pb-2">
+                <!-- comment block -->
+                <div class="comment-block">
+                    <!--item -->
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w32 rounded">
+                        </div>
+                        <div class="in">
+                            <div class="comment-header">
+                                <h4 class="title">Muhammad Kholis</h4>
+                                <span class="time">just now</span>
+                            </div>
+                            <div class="rate-block mb-1 mt-05">
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="comment-footer">
+                                <a href="javascript:;" class="comment-button">
+                                    <ion-icon name="happy-outline"></ion-icon>
+                                    Helpful (523)
+                                </a>
+                                <a href="javascript:;" class="comment-button">
+                                    <ion-icon name="flag-outline"></ion-icon>
+                                    Report
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * item -->
+                    <!--item -->
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="assets/img/sample/avatar/avatar4.jpg" alt="avatar" class="imaged w32 rounded">
+                        </div>
+                        <div class="in">
+                            <div class="comment-header">
+                                <h4 class="title">Carmelita Marsham</h4>
+                                <span class="time">Sep 23, 2020</span>
+                            </div>
+                            <div class="rate-block mb-1 mt-05">
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                                <ion-icon name="star" class="active"></ion-icon>
+                            </div>
+                            <div class="text">
+                                Vivamus lobortis, orci et commodo pulvinar, eros nibh volutpat ipsum, in rhoncus risus
+                                dolor
+                                sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nisi
+                                odio,
+                                dapibus in felis vel, lobortis iaculis quam.
+                            </div>
+                            <div class="comment-footer">
+                                <a href="javascript:;" class="comment-button">
+                                    <ion-icon name="happy-outline"></ion-icon>
+                                    Helpful (43)
+                                </a>
+                                <a href="javascript:;" class="comment-button">
+                                    <ion-icon name="flag-outline"></ion-icon>
+                                    Report
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * item -->
                 </div>
-            </a>
-
-            <hr>
-
-
-
-            <div class="mt-2 mb-2 pt-2">
-                <h6 class=""><i class="fa fa-info-circle"></i> Tentang Produk</h6>
-                <div class="card-content">
-                
-                <p class="text-justify"><small>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,
-                                                sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</small>
-                </p>
-                </div>
-               
+                <!-- * comment block -->
+                <div class="divider mt-3 mb-2"></div>
+                <a href="#" class="btn btn-block btn-transparent text-warning">Lihat Semua Ulasan</a>
             </div>
-            
-
-
-            <!-- GALLERY -->
-            <div class="row bg-white mt-3 mx-0 pb-2">
-                
-                
-                <!-- SLIDER  -->
-
-                <div class="container rounded mt-2" style="overflow-x: auto; white-space: nowrap;">
-                    <div class="row rounded">
-                        <div class="d-flex mb-2 mt-2">
-
-
-                <!-- ITEM -->
-                <div class="rounded " style="width: 250px; height: 150px; overflow: hidden;">
-                    <img src="images/carousel/carousel (3).webp" class="img-fluid img-rounded ml-1" style="width: 250px; height: auto;">
-                </div>
-                <!-- END -->
-                <!-- ITEM -->
-                <div class="rounded " style="width: 250px; height: 150px; overflow: hidden;">
-                    <img src="images/carousel/carousel (5).webp" class="img-fluid img-rounded ml-1" style="width: 250px; height: auto;">
-                </div>
-                <!-- END -->
+        </div>
+         <!-- * Review -->
 
 
 
+        <div class="section full mt-2 mb-3">
+            <div class="section-title mb-1">Produk Serupa</div>
 
+            <div class="carousel-multiple owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="images/produk/cappucino.jpg" class="image" alt="product image">
+                            <h2 class="title" style="color: grey;">Apple</h2>
+                            <p class="text">1 kg</p>
+                            <div class="price text-warning">$ 4.99</div>
+                            <a href="#" class="btn btn-sm btn-warning btn-block">LIHAT PRODUK</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- SLIDER  -->
-
-
-                <br>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="images/produk/cappucino.jpg" class="image" alt="product image">
+                            <small class="title" style="color: grey;">Spinach</small>
+                            <p class="text">1 pack</p>
+                            <div class="price text-warning">$ 5.99</div>
+                            <a href="#" class="btn btn-sm btn-warning btn-block">LIHAT PRODUK</a>
+                        </div>
+                    </div>
                 </div>
-            <!-- END GALLERY -->
-
-
-
-
-
-        
-
-
-            
-            
-        </div>
-
-
-
-
-
-        <div class="container gradient-3 py-3 fixed-bottom" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
-            <div class="d-flex justify-content-between">
-                <a href="pemesanan.html" style="background-color: white;" class="btn btn-secondary text-warning shadow border col-9 btn-rounded" >Pesan</a>
-                <a href="pemesanan.html" style="background-color: white;" class="btn btn-secondary text-warning shadow border col-2 btn-rounded" ><i class="fa fa-cart-plus"></i></a>
-            </div>
-        </div>
-
-         <div class="container gradient-3 py-3 mt-2" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
-            <div class="d-flex justify-content-between">
-                <a href="pemesanan.html" style="background-color: white;" class="btn btn-secondary text-warning shadow border col-9 btn-rounded" >Pesan</a>
-                <a href="pemesanan.html" style="background-color: white;" class="btn btn-secondary text-warning shadow border col-2 btn-rounded" ><i class="fa fa-cart-plus"></i></a>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="images/produk/cappucino.jpg" class="image" alt="product image">
+                            <h2 class="title" style="color: grey;">Hot Chili Pepper</h2>
+                            <p class="text">1 pack</p>
+                            <div class="price text-warning">$ 14.99</div>
+                            <a href="#" class="btn btn-sm btn-warning btn-block">LIHAT PRODUK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img src="images/produk/cappucino.jpg" class="image" alt="product image">
+                            <h2 class="title" style="color: grey;">Beetroot</h2>
+                            <p class="text">1 pack</p>
+                            <div class="price text-warning">$ 2.99</div>
+                            <a href="#" class="btn btn-sm btn-warning btn-block">LIHAT PRODUK</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-
-
-                
-
-                
-            </div>
-            <!-- #/ container -->
-        </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-        
-        
-        <!--**********************************
-            Footer start
-        ***********************************-->
-        
-        <!--**********************************
-            Footer end
-        ***********************************-->
     </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
+    <!-- * App Capsule -->
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <script src="plugins/common/common.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/gleek.js"></script>
-    <script src="js/styleSwitcher.js"></script>
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
 
-    <!-- Chartjs -->
-    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
-    <!-- Circle progress -->
-    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
-    <!-- Datamap -->
-    <script src="./plugins/d3v3/index.js"></script>
-    <script src="./plugins/topojson/topojson.min.js"></script>
-    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
-    <!-- Morrisjs -->
-    <script src="./plugins/raphael/raphael.min.js"></script>
-    <script src="./plugins/morris/morris.min.js"></script>
-    <!-- Pignose Calender -->
-    <script src="./plugins/moment/moment.min.js"></script>
-    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
-    <!-- ChartistJS -->
-    <script src="./plugins/chartist/js/chartist.min.js"></script>
-    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
 
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>Julian Gruber</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                California
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
 
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Discover
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Components
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Pages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Chat</div>
+                                    <span class="badge badge-danger">5</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-    <script src="./js/dashboard/dashboard-1.js"></script>
+                    <div class="listview-title mt-2 mb-1">
+                        <span>Friends</span>
+                    </div>
+                    <ul class="listview image-listview flush transparent no-line">
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sophie Asveld</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sebastian Bennett</div>
+                                    <span class="badge badge-danger">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Beth Murphy</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Amelia Cabal</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Henry Doe</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="sidebar-buttons">
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="archive-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
 
 </body>
 
