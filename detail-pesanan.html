@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+
+
+
+
+
+
+<!-- Bottom Navbar -->
+    <div class="d-xl-none d-md-none">
+
+        <nav class="navbar navbar-light bg-light navbar-expand fixed-bottom">
+
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">
+                        <i class="fa fa-home menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="cari.html" class="nav-link">
+                        <i class="fa fa-search menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="keranjang.html" class="nav-link ">
+                        <i class="fa fa-shopping-cart menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pesan.html" class="nav-link ">
+                        <i class="fa fa-envelope menu-icon"></i>
+                        <span class="badge badge-pill gradient-3">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link active">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="container">
+
+
+
+
+               <div class="container bg-white fixed-top">
+                <div class="d-flex justify-content-between p-3">
+                    <div><a href="#" onclick="window.history.go(-1); return false;"><i class="fa fa-angle-left"></i> Kembali</a></div>
+                    <div><i class="fa fa-truck"></i> Riwayat Pesanan</div>
+                </div>
+            </div>
+
+            <div class="container bg-white">
+                <div class="d-flex justify-content-between p-3">
+                    <div><i class="fa fa-truck"></i> Riwayat Pesanan</div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="bg-warning mt-2">
+                <div class="p-3 text-warning" style="color: white;">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="text-white"><i class="fa fa-truck"></i> Pesanan sedang berlangsung !</h6>
+                    </div>
+                    <h6 class="text-white mt-2">Pesanan diperkirakan akan sampai pada 29 Agustus 2022.</h6>
+                </div>
+            </div>
+
+
+
+            <div class="container mt-3 px-0">
+
+
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h6><i class="fa fa-truck"></i> Informasi Pengiriman</h6>
+                            <a href="lacak.html" class="text-warning">LIHAT</a>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <h6><i class="fa fa-map-marker"></i> Alamat Pengiriman</h6>
+                            <a href="#" class="text-warning">SALIN</a>
+                        </div>
+                        <div class="mt-2">
+                            MUHAMMAD KHOLIS - Paya Bujok Tunong, Jalan T. Fakinah, Paya Bujok Tunong, Langsa Baro (Perumahan PTPN1), KOTA LANGSA, LANGSA BARO, NANGGROE ACEH DARUSSALAM (NAD), ID, 24415
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- PESANAN -->
+
+                <div class="card mb-2">
+                    <div class="card-body px-0">
+
+            <!-- MERCHANT START -->
+
+                    <div class="border border-dark rounded ">
+                        <div class="p-2">
+
+                        <div class="p-2">
+                            <a href="#" class="float-right">Kunjungi toko <i class="fa fa-angle-right"></i></a   >
+                            <strong class="badge text-white badge-info">Status Merchant</strong>
+                            <h6 class="mt-2">Nama Merchant</h6>
+                        </div>
+                        <hr>
+
+
+                    <!-- PRODUK -->
+                    <div class="border border-dark rounded">
+                        <div class="p-2">
+                        <div class="d-flex col-12">
+                            <img src="images/produk/cappucino.jpg" style="width: 80px; height: auto;" class="img-fluid img-rounded">
+                                <h6 class="ml-2"><strong class="text-warning">x1 </strong>Cappucino </h6>
+                        </div>
+
+                        <div id="accordion-1" class="accordion mt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0 text-warning" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"> Rp. 25.000,00 <i class="fa fa-angle-right float-right" aria-hidden="true"></i></h5>
+                                        </div>
+                                        <div id="collapse1" class="collapse" data-parent="#accordion-1" style="">
+                                            <div class="card-body">
+                                                
+
+                                                <p>Subtotal Produk <br><strong>Rp. 25.000,00</strong></p>
+
+                                                <p>Subtotal Pengiriman <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Biaya Admin <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Total Pesanan <br><strong class="text-warning">Rp. 25.000,00</strong></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- PRODUK END-->
+
+
+                    <!-- PRODUK -->
+                    <div class="border border-dark rounded">
+                        <div class="p-2">
+                        <div class="d-flex col-12">
+                            <img src="images/produk/kebab.webp" style="width: 80px; height: auto;" class="img-fluid img-rounded">
+                                <h6 class="ml-2"><strong class="text-warning">x1 </strong>Kebab turki </h6>
+                        </div>
+
+                        <div id="accordion-2" class="accordion mt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0 text-warning" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> Rp. 25.000,00 <i class="fa fa-angle-right float-right" aria-hidden="true"></i></h5>
+                                        </div>
+                                        <div id="collapse2" class="collapse" data-parent="#accordion-2" style="">
+                                            <div class="card-body">
+                                                
+
+                                                <p>Subtotal Produk <br><strong>Rp. 25.000,00</strong></p>
+
+                                                <p>Subtotal Pengiriman <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Biaya Admin <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Total Pesanan <br><strong class="text-warning">Rp. 25.000,00</strong></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- PRODUK END-->
+
+                </div>
+            </div>
+            <br>
+            <!-- MERCHANT END -->
+
+
+
+
+            <!-- MERCHANT START -->
+
+                    <div class="border border-dark rounded ">
+                        <div class="p-2">
+
+                        <div class="p-2">
+                            <a href="#" class="float-right">Kunjungi toko <i class="fa fa-angle-right"></i></a   >
+                            <strong class="badge text-white badge-info">Status Merchant</strong>
+                            <h6 class="mt-2">Nama Merchant</h6>
+                        </div>
+                        <hr>
+
+
+                    <!-- PRODUK -->
+                    <div class="border border-dark rounded">
+                        <div class="p-2">
+                        <div class="d-flex col-12">
+                            <img src="images/produk/cappucino.jpg" style="width: 80px; height: auto;" class="img-fluid img-rounded">
+                                <h6 class="ml-2"><strong class="text-warning">x1 </strong>Cappucino </h6>
+                        </div>
+
+                        <div id="accordion-3" class="accordion mt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0 text-warning" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"> Rp. 25.000,00 <i class="fa fa-angle-right float-right" aria-hidden="true"></i></h5>
+                                        </div>
+                                        <div id="collapse3" class="collapse" data-parent="#accordion-3" style="">
+                                            <div class="card-body">
+                                                
+
+                                                <p>Subtotal Produk <br><strong>Rp. 25.000,00</strong></p>
+
+                                                <p>Subtotal Pengiriman <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Biaya Admin <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Total Pesanan <br><strong class="text-warning">Rp. 25.000,00</strong></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- PRODUK END-->
+
+
+                    <!-- PRODUK -->
+                    <div class="border border-dark rounded">
+                        <div class="p-2">
+                        <div class="d-flex col-12">
+                            <img src="images/produk/kebab.webp" style="width: 80px; height: auto;" class="img-fluid img-rounded">
+                                <h6 class="ml-2"><strong class="text-warning">x1 </strong>Kebab turki </h6>
+                        </div>
+
+                        <div id="accordion-4" class="accordion mt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0 text-warning" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"> Rp. 25.000,00 <i class="fa fa-angle-right float-right" aria-hidden="true"></i></h5>
+                                        </div>
+                                        <div id="collapse4" class="collapse" data-parent="#accordion-4" style="">
+                                            <div class="card-body">
+                                                
+
+                                                <p>Subtotal Produk <br><strong>Rp. 25.000,00</strong></p>
+
+                                                <p>Subtotal Pengiriman <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Biaya Admin <br><strong>Rp. 0,00</strong></p>
+
+                                                <p>Total Pesanan <br><strong class="text-warning">Rp. 25.000,00</strong></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- PRODUK END-->
+
+                </div>
+            </div>
+            <br>
+            <!-- MERCHANT END -->
+
+
+
+
+                        
+                        
+
+                        
+                    </div>
+
+
+
+                </div>
+
+
+<!-- PESANAN END -->
+
+
+
+<div class="card mb-2">
+    <div class="card-body py-3">
+        <div class="d-flex justify-content-between mt-2">
+                            <h6>Total Pesanan</h6>
+                            <h5 class="text-warning"><strong>Rp. 100.00,00</strong></h5>
+                        </div>
+    </div>
+    <div class="card-footer">
+                            <div class="d-flex justify-content-between">
+                                <h6><strong>Faktur</strong></h6>
+                                <a href="#" class="text-warning"><strong>LIHAT</strong></a>
+                            </div>
+                    </div>
+</div>
+
+                    
+
+
+
+
+<!-- PEMBAYARAN -->
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <i class="fa fa-usd mr-2"></i> 
+                            <h6 class="">Metode Pembayaran</h6>
+                        </div>
+                        <div class="text-warning">
+                            Dana (E-wallet)    
+                        </div>
+                        
+                    </div>
+                </div>
+<!-- PEMBAYARAN END -->
+
+
+<!-- HISTORY -->
+                <div class="card mb-2">
+
+
+                    <div  class="card-body">
+
+                        <div class="d-flex justify-content-between">
+                            <h6><strong>Riwayat Pengiriman</strong></h6>
+                            <a href="lacak.html" class="text-warning"><strong>LIHAT</strong></a>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-between">
+                            <h6>No. Pesanan</h6>
+                            <h6>#628953 <strong class="text-warning">SALIN</strong></h6>
+                        </div>
+
+                        <br>
+
+                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <!-- -->
+                                                <div class="detail">
+                                                    <small>17 Jul 16:28</small>
+                                                    <p class="text-warning"><i class="fa fa-dot-circle-o"></i> Pesanan Terkirim
+                                                    </p>
+                                                </div>
+                                                <div class="detail">
+                                                    <small>17 Jul 16:25</small>
+                                                    <p><i class="fa fa-dot-circle-o"></i> Pesanan sedang diantar
+                                                    </p>
+                                                </div>
+                                                <div class="detail">
+                                                    <small>17 Jul 16:20</small>
+                                                    <p><i class="fa fa-dot-circle-o"></i> Pesanan sedang disiapkan
+                                                    </p>
+                                                </div>
+                                                <!-- -->
+                                            </div>
+                                            <div>
+                                                <!-- -->
+                                                
+                                                <!-- -->
+                                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-outline-secondary"><i class="fa fa-comment"></i> Hubungi Penjual</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="fa fa-star"></i> Lihat Penilaian</a>
+                        </div>
+                    </div>
+
+
+                </div>
+<!-- HISTORY END -->
+                
+
+
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Sipaling App 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./plugins/d3v3/index.js"></script>
+    <script src="./plugins/topojson/topojson.min.js"></script>
+    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
